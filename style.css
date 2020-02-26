@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Cabin+Sketch|Just+Another+Hand|Lemonada|Mako|Oswald|Poppins&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    
+}
+
+#body {
+    margin: 0;  
+    display: flex;
+    flex-direction: column;
+}
+/* bagian headers */
+#header {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    background-color:#293462;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99999;  
+    margin: 0;
+}
+
+#title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color:#f7be16;
+    height:100%;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+#title:hover{
+    transition: all 0.5s;
+    letter-spacing:10px;
+}
+
+
+
+
+
+
+ul {
+    display: flex;
+    padding: 0 20px;
+    height: 100%;
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 10px;
+    height: 100%;
+    font-family: 'Mako', sans-serif;
+}
+
+ul li a {
+    text-decoration: none;
+    height: 100%;
+    color:#f7be16;
+    font-weight: bold;
+    opacity: 75%;
+    transition: all 0.5s;
+    
+}
+
+ul li a:hover{
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+
+
+/* Bagian Home */
+#home {
+    margin:0;
+    height:100vh;
+    width:100vw;
+    background-color: #293462;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+#home h1 {
+   font-size: 150px;
+   /* padding: 75px; */
+   color:#f7be16;
+   font-family: 'Cabin Sketch', cursive;
+   position: relative;
+     /* left: -1500px;  */
+    /* animation-name:moveRight; */
+    animation: moveRight;
+    animation-duration:3s;
+}
+
+@keyframes moveRight {
+    form{left:-1200px; opacity:0}
+    to {left:0;opacity:1}
+
+}
+
+/* #home h1{
+    left: 0px;
+} */
+/* #home h1:hover{
+    opacity: 100%;
+    transition: all 1s;
+} */
+
+
+
+/* bagian about */
+#about {
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    width:100vw;
+    background-color:white; 
+    justify-content: center;
+    
+}
+
+#about div {
+    
+    text-align: center;
+    margin: 0 40px 0 0;
+    overflow: auto;
+    
+    
+} 
+
+#about img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow:0 5px 8px grey;
+    border:5px solid white;
+    align-items: center;
+}
+
+#about h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+#about p {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: grey;
+}
+
+
+
+
+/* bagian contact */
+#contact{
+    
+    margin-top:100px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-items: center;
+
+}
+
+#contact h1 {
+    font-size: 20px;
+    padding-top: 20px;
+    color:#f7be16 ;
+    font-family: cursive;
+}
+
+#contact #twitter img:hover {
+    
+    width: 50px;
+    transition: all 0.5s;
+}
+
+#contact #instagram img:hover {
+  
+    width: 50px;
+    transition: all 0.5s;
+}
+
+#contact #github img:hover {
+   
+    width: 50px;
+    transition: all 0.5s;
+}
+
+#contact #googlep img:hover {
+   
+    width: 50px;
+    transition: all 0.5s;
+}
+
+#contact #facebook img:hover {
+   
+    width: 50px;
+    transition: all 0.5s;
+}
+
+#contact img {
+    width: 30px;
+    transition: all 0.5s;
+}
+
+/* untuk galery  */
+
+#galeri {
+    width: 100vw;
+    height: 100vh;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+#inGaleri {
+
+    margin-top: 20px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#galeri #inGaleri div {
+    /* border: 2px solid black; */
+    width:  250px;
+    height: 250px;
+    padding: 0;
+    border: 1px solid black;
+    margin: 5px;
+   
+
+}
+
+#inGaleri div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%;
+}
+
+#inGaleri div img:hover {
+    opacity: 100%;
+}
+
+#contact2
+{
+    width:100vw;
+    height:400px;
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+
+#call
+{
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    padding-right: 20px;
+    /* border-right: 2px solid black; */
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background-color: #f7be16;
+    box-shadow:1px 3px 10px grey ;
+}
+
+#call h1{
+    font-size: 50px;
+    color: #293462;
+}
+
+#call h2{
+    font-size:40px;
+    font-weight: 500;
+    color: #293462;
+}
+
+#question {
+    width: 600px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#question h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px ;
+    text-align: center;
+    color: #293462;
+}
+#question form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    padding: 5px;
+}
+
+
+form input {
+    /* margin-top: 10px; */
+   border-top: none;
+   border-left: none;
+   border-Right: none;
+   padding: 0%;
+   font-size: 25px;
+   height: 40px;
+   background-color: whitesmoke;
+   font-family: 'Oswald', sans-serif;
+   text-align: left;
+   transition: all 0.5s;
+}
+
+form input:focus {
+   
+    height: 50px ;
+    border-bottom: 2px solid #293462;
+    transition: all 0.5s;
+    outline: none;
+    
+   
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 15px;
+    border: 0.5px solid grey ;
+    background-color: whitesmoke;
+    text-align: left;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#message:focus {
+    outline: none;
+}
+
+#btn {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 200px;
+    text-align: center;
+    border: 2px solid #293462;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #293462;
+}
+
+#btn:hover{
+    background-color: #293462;
+    color: #f7be16;
+}
+
+/* bagian footers */
+
+
+#footer {
+    width: 100vw;
+    height: 150px;
+    background-color: black;
+}
+
+h5 {
+    text-align: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-top: 80px;
+}
+
+
+
+
